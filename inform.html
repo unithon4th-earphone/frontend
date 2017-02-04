@@ -1,0 +1,261 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--jQuery-->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <!--bootstrap-->
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+    <!--NAVER Map API-->
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=hVcMaKt3xjgrQVu6rnwU"></script>
+
+    <!--CSS-->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <!--CustomCSS-->
+    <link rel="stylesheet" type="text/css" href="inform.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button><a class="navbar-brand" href="#"><span>Brand</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a>
+                    </li>
+                    <li><a href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--inform_edit page-->
+
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <!--top section-->
+                    <div class="row top-section">
+                        <div class="col-md-7">
+                            <div class="top-left">
+
+
+                                <div class="user-info">
+                                    <img src="img/usericon.svg" width="100px" height="100px">
+
+                                    <div class="user-info-detail right">
+                                        <div class="user-info-detail-font">
+                                        <span>이름 / 성별</span>
+                                        <span class="right">이메일 주소</span>
+                                        </div>
+                                        <p class="user-info-detail-font2">구사언어</p>
+                                        <p class="user-info-detail-font2">자기소개자기소개자기소개자기소개</p> 
+                                    </div>                                   
+                                </div>
+
+                                <div class="tour-info">
+                                    <span>YY / MM / DD ~ YY / MM / DD</span>
+                                    <span class="right">무슨시 무슨구 / 카테고리</span>
+                                </div>
+
+                                <div class="tour-detail">
+                                    <h3>대한민국의 숨은 명소들!</h3>
+
+                                    <p>안알랴줌</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                    <br/>
+                                   
+                                    
+                                </div>
+                                
+
+                                
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-md-5">
+
+                            <div class="top-right">
+                                <div class="main-photo">메인사진</div>
+                                <div class="row">
+                                    <div class="add-photo col-md-4">추가</div>
+                                    <div class="add-photo col-md-4">추가</div>
+                                    <div class="add-photo col-md-4">추가</div>
+                                    
+                                </div>
+                                
+                            </div>                            
+                        </div>
+
+
+                        
+                    </div>
+
+
+                    <!--map-->
+
+                     <div id="map" class="map-absoulte" style="width:100%;height:600px;"></div>
+
+                     <!--down-section-->
+
+                     <div class="row">
+
+                        <div class="col-md-7">
+
+                             <label>장소 정보</label>
+
+                            <ul id="map-list-div">
+                            <!--li부분 계속 추가-->
+                            <li class="map-list row">
+                                <div class="col-md-2">
+                                    <img src="img/pin/pin_upsize_1.png" width="40" height="60" class="map-icon">
+                                </div>
+
+
+                                <div class="col-md-8 map-list-input">
+                                    <p><b>선정릉역 4번 출구</b></p>
+                                    <p>분당선 선정릉역에서 내려 4번출구로 내려오세요</p>
+
+                                </div>
+
+                            
+                            </li>
+
+                            <li class="map-list row">
+                                <div class="col-md-2">
+                                    <img src="img/pin/pin_upsize_2.png" width="40" height="60" class="map-icon">
+                                </div>
+
+
+                                <div class="col-md-8 map-list-input">
+                                    <p><b>선정릉역 4번 출구</b></p>
+                                    <p>분당선 선정릉역에서 내려 4번출구로 내려오세요</p>
+
+                                </div>
+
+                            
+                            </li>
+
+                            <li class="map-list row">
+                                <div class="col-md-2">
+                                    <img src="img/pin/pin_upsize_3.png" width="40" height="60" class="map-icon">
+                                </div>
+
+
+                                <div class="col-md-8 map-list-input">
+                                    <p><b>선정릉역 4번 출구</b></p>
+                                    <p>분당선 선정릉역에서 내려 4번출구로 내려오세요</p>
+
+                                </div>
+
+                            
+                            </li>
+                            <!---->
+                        </ul>
+
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <div>
+                                <label>참여자</label>
+                            <div class="tour-person">
+                                <p>
+                                    2~3명 : 30000 /인<br/>
+                                    4~8명 : 25000 /인<br/>
+                                    최대 4인 
+                                </p>
+                            </div>
+                            
+                            <button type="button" class="btn btn-success tour-btn">여행 동참하기</button>
+                                
+                            </div>
+
+                            <div class="tour-person-list">
+                                <label>참여자</label>
+
+                                <div class="row">
+
+                                    <div class="tour-person-detail col-md-3">
+                                        <img src="img/usericon.svg" width="50px" height="50px" />
+                                        <p>이름</p>
+                                    </div>
+
+                                    <div class="tour-person-detail col-md-3">
+                                        <img src="img/usericon.svg" width="50px" height="50px" />
+                                        <p>이름</p>
+                                    </div>
+
+                                    <div class="tour-person-detail col-md-3">
+                                        <img src="img/usericon.svg" width="50px" height="50px" />
+                                        <p>이름</p>
+                                    </div>
+                                </div>
+
+                                
+                                
+                            </div>
+                            
+
+
+                        </div>
+                       
+                        
+                         
+                     </div>
+
+
+
+
+                </div>
+                <!--col-md-12-->
+            </div>
+            <!--row-->
+        </div>
+        <!--container-->
+    </div>
+    <!--section-->
+
+    <script type="text/javascript">
+         //map Option config
+        var mapOption = {
+           
+            zoom: 9,
+            //map controll
+            scaleControl: false,
+            logoControl: false,
+            mapDataControl: false,
+            zoomControl: true,
+            minZoom: 1
+            //
+        };
+
+        //map
+        var map = new naver.maps.Map('map', mapOption);
+
+    </script>
+
+</body>
+
+</html>
