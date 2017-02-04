@@ -1,0 +1,130 @@
+<html><head>
+    <style>
+      #header{
+      	margin-top : 0px;
+        padding-top : 0px;     
+        
+      }
+      li{
+         font-size : 18px;
+        }      
+        .section{
+        font-family :"나눔고딕"; //임시방편.. 
+        } 
+        #box{
+          width : 30%;
+          padding : 20px;
+          z-index:1;
+          -webkit-border-radius:20px;
+        }
+      #box:after{
+        background-image:url(D:\grey.png);
+        opacity :0.5;
+        z-index:-1;
+        background-size:100%; 
+        padding : 20px;
+      	position: absolute;
+        top:0;
+        left:0;
+      }  
+      	
+        input[type="text"]{
+          border : 2.5px;
+          border-style :solid;
+          border-color : white;
+          color:white;
+          background-color:transparent;
+          -webkit-border-radius:10px;
+          padding-bottom : 100px;
+          padding: 7px;
+          width : 100%;      	
+        }
+        input[type="checkbox"]{
+              padding-top : 10px;
+               height 	: 1em;
+           	  width     : 2em;
+            -ms-transform: scale(2);
+              -moz-transform: scale(7);
+              -webkit-transform: scale(2);
+              -o-transform: scale(8);
+        }
+        #findPass{
+          text-align : right;
+          font-size : 16px;
+        }
+        .loginBox {
+          padding-bottom : 120px;
+          font-size : 25px;
+        }
+
+        #clickLogin {
+          margin-top : 20px;
+          font-size : 15px;
+          background-color : #009DC1;
+          -webkit-border-radius:10px;
+          height : 4.5%;
+          width : 100%;
+          color : white;        
+        }
+        #clickNaver{
+          font-size : 15px;
+           background-color : #00C73C;  
+          -webkit-border-radius:10px;
+           color : white;
+           height : 4.5%;
+          width : 100%;
+        }
+        #clickJoin{
+          font-size : 15px;
+          border-style : solid;
+          border-color : white;
+          background-color  : transparent;
+          -webkit-border-radius:10px;
+          height :4.5%;
+          width : 100%;
+          color : white; 
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+  </head><body>
+    <div class="section">
+      <div class="background-image" style="background-image : url('D:\main_1.jpg')"></div>
+      <div class="container">
+        <div class="row"></div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="section"></div>
+          </div>
+          <div class="col-md-4 text-center" id="box">
+            <img src="D:\drive-download-20170204T122810Z\서비스 로고 _ tripear\tripear_1.png" class="center-block img-responsive">
+            <div class="loginBox"></div>
+            <p>
+              <input type="text" value="이메일주소" name="email">
+            </p>
+            <p>
+              <input type="text" value="비밀번호" name="passWord" style="margin-bottom:5px;">
+            </p>
+            <p class="text-left">
+              <input type="checkbox" name="loginInfo" value="로그인상태유지">
+              <label for="checkbox2">
+                <span></span>로그인 상태 유지</label>
+            </p>
+            <p class="text-right">
+              <a herf="#" id="findPass"> 비밀번호 찾기</a>
+            </p>
+            <p id="clicklogin">로그인</p>
+            <p id="clickNaver">네이버 계정으로 로그인</p>
+            <p id="clickJoin">회원가입</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+</body></html>
